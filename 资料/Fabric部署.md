@@ -24,6 +24,9 @@ Peer节点是一个物理的概念（与之对比，通道(Channel)是一个逻�
 <!--TODO 发布时，修改图片地址-->
 通道由排序服务节点负责管理，同时该节点还负责排序通道中的交易。
 #### 组织
-
+#### cryptogen服务器
+cryptogen是用来生产fabric需要的证书的；这个生产过程是静态的。
+参考文章：[cryptogen服务器使用](https://www.jianshu.com/p/9d031a0606b7)
+#### configtxgen服务器
 
 
