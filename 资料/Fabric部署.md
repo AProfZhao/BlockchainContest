@@ -29,4 +29,15 @@ cryptogen是用来生产fabric需要的证书的；这个生产过程是静态�
 参考文章：[cryptogen服务器使用](https://www.jianshu.com/p/9d031a0606b7)
 #### configtxgen服务器
 
+#### fabric-samples部署
+本文参考[fabric-samples的下载及自动启动网络脚本演示](https://blog.csdn.net/qq_25870633/article/details/81113464)完成
+1. 先查看当前存在的Docker镜像
 
+---
+备注
+`https://bit.ly/2ysbOFE`被墙，替代文件位于`https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh`
+
+
+[Hyperledger Fabric2中文文档-快速入门](https://blog.csdn.net/zhanglingge/article/details/106717738)
+
+[Hyperledger Fabric 一文了解MSP的目录结构](https://blog.csdn.net/zhanglingge/article/details/107484553)
