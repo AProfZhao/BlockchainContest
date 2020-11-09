@@ -32,6 +32,44 @@ cryptogen是用来生产fabric需要的证书的；这个生产过程是静态�
 #### fabric-samples部署
 本文参考[fabric-samples的下载及自动启动网络脚本演示](https://blog.csdn.net/qq_25870633/article/details/81113464)完成
 1. 先查看当前存在的Docker镜像
+   ```
+   sudo docker images
+   ```
+   如果出现如下信息，表示存在一个叫“hello-world”的镜像
+   ```
+   sudo REPOSITORY     TAG                 IMAGE ID            CREATED             SIZE
+   hello-world         latest              bf756fb1ae65        10 months ago       13.3kB
+   ```
+2. 删除已经存在的镜像，排除干扰
+   ```
+   sudo docker rmi bf756fb1ae65
+   ```
+   这里的bf756fb1ae65是镜像的“IMAGE ID"，需要根据你的机器具体修改
+   如果出现错误提示
+   ```
+   Error response from daemon: conflict: unable to delete bf756fb1ae65 (must be forced) - image is being used by stopped container 3ffe1759aaa0
+   ```
+   表示镜像正在运行，强制删除镜像
+   ```
+   sudo docker rmi -f bf756fb1ae65
+   ```
+3. 返回用户home目录
+   ```
+   cd
+   ```
+4. 使用curl下载脚本
+   ```
+   curl -sSL https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh | bash
+   ```
+   
+5. 执行脚本
+   ```
+   sudo sh ./get-fabric.sh
+   ```
+6. 运行
+
+
+
 
 ---
 备注
@@ -41,3 +79,7 @@ cryptogen是用来生产fabric需要的证书的；这个生产过程是静态�
 [Hyperledger Fabric2中文文档-快速入门](https://blog.csdn.net/zhanglingge/article/details/106717738)
 
 [Hyperledger Fabric 一文了解MSP的目录结构](https://blog.csdn.net/zhanglingge/article/details/107484553)
+
+
+
+https://github.com/hyperledger/fabric/releases/download/v2.2.1/hyperledger-fabric-linux-amd64-2.2.1.tar.gz
