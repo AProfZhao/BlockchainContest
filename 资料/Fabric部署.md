@@ -77,8 +77,6 @@ cryptogen是用来生产fabric需要的证书的；这个生产过程是静态�
 
 ---
 备注
-`https://bit.ly/2ysbOFE`被墙，替代文件位于`https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh`
-
 
 [Hyperledger Fabric2中文文档-快速入门](https://blog.csdn.net/zhanglingge/article/details/106717738)
 
