@@ -62,8 +62,8 @@ cryptogen是用来生产fabric需要的证书的；这个生产过程是静态�
    curl -sSL https://bit.ly/2ysbOFE | get-babric.sh -s
    #该地址被墙，执行出错
    #从
-   https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh
-   手动复制文件内容，粘贴到本地get-babric.sh文件中
+   #https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh
+   #手动复制文件内容，粘贴到本地get-babric.sh文件中
    ```
    
 5. 执行脚本
