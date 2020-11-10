@@ -59,7 +59,7 @@ cryptogen是用来生产fabric需要的证书的；这个生产过程是静态�
    ```
 4. 使用curl下载脚本
    ```
-   curl -sSL https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh | bash
+   curl -sS https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh -o bootstrap.sh
    ```
    
 5. 执行脚本
